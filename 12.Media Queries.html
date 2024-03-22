@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Media Queries </title>
+<style>
+  body{background-color: rgb(192, 181, 181);}
+  h1{color: gold;}
+.wrapper {overflow: auto;}
+
+#main {margin-left: 4px;}
+
+#leftsidebar {
+  float: none;
+  width: auto;
+}
+
+#menulist {
+  margin: 0;
+  padding: 0;
+}
+
+.menuitem {
+  background: #CDF0F6;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  list-style-type: none;
+  margin: 4px;
+  padding: 2px;
+}
+
+@media screen and (min-width: 480px) {
+  #leftsidebar {width: 200px; float: left;}
+  #main {margin-left: 216px;}
+}
+</style>
+</head>
+<body>
+<h1>Tweleveth assignment</h1>
+<h2>This assignment tells about Media Queries</h2>
+<div class="wrapper">
+  <div id="leftsidebar">
+    <ul id="menulist">
+      <li class="menuitem">Pizza  80rs</li>
+      <li class="menuitem">Burger  100rs</li>
+      <li class="menuitem">French Fries  60rs</li>
+      <li class="menuitem">Panner Puff  50rs</li>
+      <li class="menuitem">Aloo Twister  50rs</li>
+    </ul>
+  </div>
+  
+  <div id="main">
+    <p>Here there are many delicious items with low budget...!For more items and for more details please visit our page 7th heaven.you were always welcome and please enjoy the food.</p>
+  </div>
+</div>
+
+</body>
+</html>
+

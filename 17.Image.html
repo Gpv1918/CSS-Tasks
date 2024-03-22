@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image styles</title>
+<style>
+.container {
+  position: relative;
+}
+
+#img2 { 
+
+  height: auto;
+  opacity: 0.3;
+}
+#img1 {
+  border-radius: 50%;
+}
+
+#img3:hover {
+  transform: scaleX(-1);
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+#img5 {
+  display: block;
+  width: 50%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+<h1>This is a 17th assignment tells about images and their styles</h1>
+<div class="container">
+    <h2>With opacity 0.3</h2>
+  <img id="img2" src="educ.jpg" width="200" height="200">
+</div>
+
+
+<h2>Circled Image</h2>
+<img id="img1" src="educ.jpg" alt="Paris" width="300" height="300">
+
+
+<h2>Flip an Image</h2>
+<p>Move your mouse over the image.</p>
+<img id="img3" src="G:\Internship\Images\gayathri 1.jpg"  alt="Paris" width="400" height="300">
+
+
+<h2>Fade in Overlay</h2>
+
+<div class="container">
+  <img id="img5"src="G:\Internship\Images\gayathri 1.jpg" alt="Avatar" >
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
+</div>
+
+
+</body>
+</html>
+
+
